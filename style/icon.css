@@ -1,0 +1,16 @@
+.search.input > .icon {
+  opacity: 0.5;
+  margin-top: 0.4rem;
+}
+
+.search.icon {
+  margin-left: 0.618rem;
+}
+.keyboard.icon {
+  margin-right: 0.618rem;
+}
+
+.keyboard.icon:hover {
+  opacity: 1 !important;
+  cursor: pointer;
+}
