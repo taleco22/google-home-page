@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./css/index.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"
@@ -21,88 +21,102 @@
       </ul>
     </nav>
     <main class="main">
-      <img
-        class="logo"
-        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="google logo"
-      />
-      <i class="share alternate icon"></i>
+      <div class="container">
+        <img
+          class="logo"
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="google logo"
+        />
+        <i class="share alternate icon"></i>
 
-      <form class="form">
-        <div class="search input">
-          <i class="search icon"></i>
-          <input type="text" class="text leave" />
-          <div class="dropdown akinator">
-            <ul>
-              <li>
-                <a>Lorem</a>
-              </li>
-              <li>
-                <a>Ipsum</a>
-              </li>
-              <li>
-                <a>Dolor</a>
-              </li>
-            </ul>
+        <form class="form">
+          <div class="search input">
+            <i class="search icon"></i>
+            <input type="text" class="text leave" />
+            <div class="dropdown akinator">
+              <ul>
+                <li>
+                  <a>Lorem</a>
+                </li>
+                <li>
+                  <a>Ipsum</a>
+                </li>
+                <li>
+                  <a>Dolor</a>
+                </li>
+              </ul>
+            </div>
+            <i class="keyboard icon leave"></i>
           </div>
-          <i class="keyboard icon leave"></i>
-          <div class=" dropdown vkeyboard">
-            <fieldset id="numbers">
-              <button type="button" name="1"><span>1</span></button>
-              <button type="button" name="2"><span>2</span></button>
-              <button type="button" name="3"><span>3</span></button>
-              <button type="button" name="4"><span>4</span></button>
-              <button type="button" name="5"><span>5</span></button>
-              <button type="button" name="6"><span>6</span></button>
-              <button type="button" name="7"><span>7</span></button>
-              <button type="button" name="8"><span>8</span></button>
-              <button type="button" name="9"><span>9</span></button>
-              <button type="button" name="0"><span>0</span></button>
-            </fieldset>
-            <fieldset>
-              <button type="button" name="q"><span>q</span></button>
-              <button type="button" name="w"><span>w</span></button>
-              <button type="button" name="e"><span>e</span></button>
-              <button type="button" name="r"><span>r</span></button>
-              <button type="button" name="t"><span>t</span></button>
-              <button type="button" name="y"><span>y</span></button>
-              <button type="button" name="u"><span>u</span></button>
-              <button type="button" name="i"><span>i</span></button>
-              <button type="button" name="o"><span>o</span></button>
-              <button type="button" name="p"><span>p</span></button>
-            </fieldset>
-            <fieldset>
-              <button type="button" name="a"><span>a</span></button>
-              <button type="button" name="s"><span>s</span></button>
-              <button type="button" name="d"><span>d</span></button>
-              <button type="button" name="f"><span>f</span></button>
-              <button type="button" name="g"><span>g</span></button>
-              <button type="button" name="h"><span>h</span></button>
-              <button type="button" name="j"><span>j</span></button>
-              <button type="button" name="k"><span>k</span></button>
-              <button type="button" name="l"><span>l</span></button>
-              <button type="button" name="ç"><span>ç</span></button>
-            </fieldset>
-            <fieldset>
-              <button type="button" name="z"><span>z</span></button>
-              <button type="button" name="x"><span>x</span></button>
-              <button type="button" name="c"><span>c</span></button>
-              <button type="button" name="v"><span>v</span></button>
-              <button type="button" name="b"><span>b</span></button>
-              <button type="button" name="n"><span>n</span></button>
-              <button type="button" name="m"><span>m</span></button>
-            </fieldset>
+          <div class="submit">
+            <button class="basic" type="submit">
+              Google Search
+            </button>
+            <button class="lucky" type="submit">I'm Feeling Lucky</button>
           </div>
-        </div>
-
-        <div class="submit">
-          <button class="basic" type="submit">
-            Google Search
-          </button>
-          <button class="lucky" type="submit">I'm Feeling Lucky</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
+
+    <div class="vkeyboard">
+      <div class="top">
+        <span class="language">português brasileiro</span>
+        <div class="x">
+          <span class="close"></span>
+        </div>
+      </div>
+      <div class="keys">
+        <fieldset id="numbers">
+          <button name="'">'</button>
+          <button type="button" name="1">1</button>
+          <button type="button" name="2">2</button>
+          <button type="button" name="3">3</button>
+          <button type="button" name="4">4</button>
+          <button type="button" name="5">5</button>
+          <button type="button" name="6">6</button>
+          <button type="button" name="7">7</button>
+          <button type="button" name="8">8</button>
+          <button type="button" name="9">9</button>
+          <button type="button" name="0">0</button>
+        </fieldset>
+        <fieldset>
+          <button type="button" name="q">q</button>
+          <button type="button" name="w">w</button>
+          <button type="button" name="e">e</button>
+          <button type="button" name="r">r</button>
+          <button type="button" name="t">t</button>
+          <button type="button" name="y">y</button>
+          <button type="button" name="u">u</button>
+          <button type="button" name="i">i</button>
+          <button type="button" name="o">o</button>
+          <button type="button" name="p">p</button>
+        </fieldset>
+        <fieldset>
+          <button type="button" name="a">a</button>
+          <button type="button" name="s">s</button>
+          <button type="button" name="d">d</button>
+          <button type="button" name="f">f</button>
+          <button type="button" name="g">g</button>
+          <button type="button" name="h">h</button>
+          <button type="button" name="j">j</button>
+          <button type="button" name="k">k</button>
+          <button type="button" name="l">l</button>
+          <button type="button" name="ç">ç</button>
+        </fieldset>
+        <fieldset>
+          <button type="button" name="z">z</button>
+          <button type="button" name="x">x</button>
+          <button type="button" name="c">c</button>
+          <button type="button" name="v">v</button>
+          <button type="button" name="b">b</button>
+          <button type="button" name="n">n</button>
+          <button type="button" name="m">m</button>
+        </fieldset>
+        <fieldset>
+          <button type="button" class="space" name=" "></button>
+        </fieldset>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="location">
@@ -115,5 +129,60 @@
         <li><a href="">About</a></li>
       </ul>
     </footer>
+
+    <script>
+      const btn = document.querySelectorAll(".vkeyboard button");
+      const t = document.querySelector(".text.leave");
+      const vKeyboard = document.querySelector(".vkeyboard");
+      const close = document.querySelector(".x");
+      const keyboardIcon = document.querySelector(".keyboard.icon");
+
+      keyboardIcon.addEventListener("click", openVk);
+      close.addEventListener("click", closeVk);
+
+      function closeVk(e) {
+        vKeyboard.style.opacity = 0;
+      }
+
+      function openVk(e) {
+        vKeyboard.style.opacity = 1;
+      }
+
+      vKeyboard.addEventListener("mousedown", mouseDown);
+
+      function mouseDown(e) {
+        window.addEventListener("mousemove", mouseMove);
+        window.addEventListener("mouseup", mouseUp);
+
+        let prevX = e.clientX;
+        let prevY = e.clientY;
+
+        function mouseMove(e) {
+          let newX = prevX - e.clientX;
+          let newY = prevY - e.clientY;
+
+          const rect = vKeyboard.getBoundingClientRect();
+          vKeyboard.style.left = rect.left - newX + "px";
+          vKeyboard.style.top = rect.top - newY + "px";
+          vKeyboard.style.right = "unset";
+          vKeyboard.style.bottom = "unset";
+
+          prevX = e.clientX;
+          prevY = e.clientY;
+        }
+
+        function mouseUp() {
+          window.removeEventListener("mousemove", mouseMove);
+          window.removeEventListener("mouseup", mouseUp);
+        }
+      }
+
+      btn.forEach((v) =>
+        v.addEventListener("click", (evt) => {
+          console.log(evt.target.name);
+          t.value += evt.target.name;
+        })
+      );
+    </script>
   </body>
 </html>
