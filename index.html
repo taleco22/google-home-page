@@ -13,13 +13,35 @@
   </head>
   <body>
     <nav class="nav">
+      <section class="menu">
+        <div class="part -1">
+          <div><i class="user circle icon"></i> Account</div>
+          <div><i class="youtube icon"></i> Youtube</div>
+          <div><i class="google icon"></i>Search</div>
+          <div><i class="google play icon"></i>Play</div>
+          <div><i class="google drive icon"></i>Drive</div>
+          <div><i class="google plus icon"></i>Plus</div>
+          <div><i class="file excel icon"></i>Docs</div>
+          <div><i class="google wallet icon"></i>Wallet</div>
+          <div><i class="sticky note icon"></i>Keep</div>
+        </div>
+        <span></span>
+        <div class="part -2">
+          <div><i class="video icon"></i>Duo</div>
+          <div><i class="google wallet icon"></i>Wallet</div>
+          <div><i class="sticky note icon"></i>Keep</div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
       <ul>
         <li>Gmail</li>
         <li>Images</li>
-        <li><i class="th icon"></i></li>
+        <li class="openMenu"><i class="th icon"></i></li>
         <li class="signin">Sign In</li>
       </ul>
     </nav>
+
     <main class="main">
       <div class="container">
         <img
@@ -32,7 +54,7 @@
         <form class="form">
           <div class="search input">
             <i class="search icon"></i>
-            <input type="text" class="text leave" />
+            <input type="text" class="text leave" autofocus />
             <div class="dropdown akinator">
               <ul>
                 <li>
@@ -136,16 +158,24 @@
       const vKeyboard = document.querySelector(".vkeyboard");
       const close = document.querySelector(".x");
       const keyboardIcon = document.querySelector(".keyboard.icon");
+      const dropmenu = document.querySelector(".openMenu");
+      const menu = document.querySelector(".menu");
+
+      dropmenu.addEventListener("click", toggleMenu);
+
+      function toggleMenu(e) {
+        menu.classList.toggle("open");
+      }
 
       keyboardIcon.addEventListener("click", openVk);
       close.addEventListener("click", closeVk);
 
       function closeVk(e) {
-        vKeyboard.style.opacity = 0;
+        vKeyboard.style.display = "none";
       }
 
       function openVk(e) {
-        vKeyboard.style.opacity = 1;
+        vKeyboard.style.display = "block";
       }
 
       vKeyboard.addEventListener("mousedown", mouseDown);

@@ -2,6 +2,104 @@
   color: #445;
 }
 
+.menu {
+  position        : absolute;
+  top             : 56px;
+  right           : 35px;
+  border-radius   : .5em;
+  display         : block;
+  overflow-y      : scroll;
+  overflow-x      : hidden;
+  width           : 320px;
+  height          : 400px;
+  background-color: #fff;
+  border          : 1px solid #eee;
+  box-shadow      : 0 1px 5px #999;
+  z-index         : 1;
+  display         : none;
+
+  &.open {
+    display: block;
+  }
+
+
+  .part {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: center;
+    padding        : 0 20px;
+  }
+
+
+  span {
+    display      : flex;
+    width        : 100%;
+    border-bottom: 2px solid #ccc;
+  }
+
+  div {
+    width          : 33.3%;
+    height         : 100px;
+    text-align     : center;
+    font-size      : 13px;
+    font-weight    : 600;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+    cursor         : pointer;
+
+    i {
+      position : relative;
+      margin   : 0 0 10px 0;
+      font-size: 45px;
+    }
+  }
+
+  .video {
+    color: #4285f4;
+  }
+
+  .note {
+    color: yellow;
+  }
+
+  .user {
+    color: #2d73e2;
+  }
+
+  .google {
+    color: blue;
+  }
+
+  .drive {
+    color: green;
+  }
+
+  .excel {
+    color: green;
+  }
+
+  .plus {
+    color: red;
+  }
+
+  .wallet {
+    color: orange;
+  }
+
+  .play {
+    color: springgreen;
+  }
+
+  .youtube {
+    color: red;
+  }
+}
+
 .nav ul {
   display        : flex;
   position       : absolute;
@@ -28,9 +126,9 @@
 .nav ul .signin {
   padding         : 5px 13px;
   color           : #fff;
+  border-radius   : 3px;
   background-color: #2d73e2;
   border          : 1px solid #4285f4;
-  border-radius   : 2px;
   margin-right    : 21px;
   font-weight     : bold;
 }

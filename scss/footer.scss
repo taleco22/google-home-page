@@ -1,19 +1,21 @@
 .footer {
   font-size       : 14px;
   margin          : 0;
+  height          : 90px;
   padding         : 13px;
   background-color: #eee;
   position        : fixed;
-  max-height      : 50vh;
   width           : 100%;
   bottom          : 0;
 }
 
-.footer .location a {
-  color          : #777;
-  margin         : 0;
-  margin-bottom  : 10px;
-  text-decoration: none;
+.footer .location {
+  margin-bottom: 10px;
+
+  a {
+    color          : #777;
+    text-decoration: none;
+  }
 }
 
 .footer hr {
